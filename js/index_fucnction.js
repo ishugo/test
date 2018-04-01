@@ -1,6 +1,11 @@
 $(function(){
+
+
+
+
+
     $(".b01").click(function(){
-        alert("123");
+        $("#editor_m").html("Hello Hugo");
     })
 //	console.log(); //debug
 //	alert(); //debug
