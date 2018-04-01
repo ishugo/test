@@ -1,6 +1,6 @@
 $(function(){
     $(".b01").click(function(){
-        $.ajax('http://hugo.qov.tw/github/function.php',{  
+        $.ajax('//hugo.qov.tw/github/function.php',{  
             type:'POST'
             ,data:{	
                 opt:1
@@ -14,7 +14,7 @@ $(function(){
 
     $(".b02").click(function(){           
         var http = new XMLHttpRequest();
-        var url = "http://hugo.qov.tw/github/function.php";
+        var url = "//hugo.qov.tw/github/function.php";
         var params = "opt=1";
         http.open("POST", url, true);
 
@@ -25,7 +25,7 @@ $(function(){
                 alert(http.responseText);
             }
         }
-        
+
         http.send(params);
     })
 
