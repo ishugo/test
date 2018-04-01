@@ -1,6 +1,6 @@
 $(function(){
     $(".b01").click(function(){
-        alert();
+        alert("123");
     })
 //	console.log(); //debug
 //	alert(); //debug
