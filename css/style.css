@@ -1,0 +1,22 @@
+@charset "utf-8";
+.class01 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.class02{
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+}
+.class02 img{
+    box-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    2px 2px 2px black;
+}
+
+.b01{
+    margin:10px 0px 10px 0px;
+}
