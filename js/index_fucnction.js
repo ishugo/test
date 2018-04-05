@@ -1,6 +1,8 @@
 $(function(){
-    $(".b01").click(function(){
-        $.ajax('https://hugo.qov.tw/github/function.php',{  
+    $(".b01").click(function(){ 
+        //http://ook.dynu.net:9071/github/function.php
+        //https://hugo.qov.tw/github/function.php
+        $.ajax('http://ook.dynu.net:9071/github/function.php',{  
             type:'POST'
             ,data:{	
                 opt:1
@@ -14,7 +16,7 @@ $(function(){
 
     $(".b02").click(function(){           
         var http = new XMLHttpRequest();
-        var url = "https://hugo.qov.tw/github/function.php";
+        var url = "http://ook.dynu.net:9071/github/function.php";
         var params = "opt=1";
         http.open("POST", url, true);
 
