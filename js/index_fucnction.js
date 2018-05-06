@@ -18,9 +18,9 @@ $(function(){
             url: 'http://ook.dynu.net:9071/github/function.php',
             data: {
                 opt:1
-            }.done(function(msg){
-                alert(msg);
-                $("#editor_m").html(msg);
+            }.then(function (msg) {
+                //alert(msg);
+                console.log(msg);
             })
         });
 
