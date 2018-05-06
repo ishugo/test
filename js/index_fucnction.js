@@ -8,6 +8,7 @@ $(function(){
                 opt:1
             }
             }).done(function(msg){
+                alert(msg);
                 $("#editor_m").html(msg);
                  //$(".alert_java").html(msg);
                  //if(msg==''){location.reload();}else{alert(msg);}
