@@ -13,16 +13,18 @@ $(function(){
         //          //$(".alert_java").html(msg);
         //          //if(msg==''){location.reload();}else{alert(msg);}
         // });
-        axios({
-            method: 'post',
-            url: 'http://ook.dynu.net:9071/github/function.php',
-            data: {
-                opt:1
-            }.then(function (msg) {
-                //alert(msg);
-                console.log(msg);
-            })
-        });
+        axios.post('http://ook.dynu.net:9071/github/function.php', {
+            firstName: 'Fred',
+            lastName: 'Flintstone'
+          })
+          .then(function (response) {
+            alert(response);
+            console.log(response);
+          })
+          .catch(function (error) {
+            alert(error);
+            console.log(error);
+          });
 
     })
 
