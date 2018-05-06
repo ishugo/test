@@ -21,7 +21,7 @@ $(function(){
             }.done(function(msg){
                 alert(msg);
                 $("#editor_m").html(msg);
-            }
+            })
         });
 
     })
