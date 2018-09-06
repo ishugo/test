@@ -13,28 +13,14 @@ $(function(){
         //          //$(".alert_java").html(msg);
         //          //if(msg==''){location.reload();}else{alert(msg);}
         // });
-        var url = "http://ook.dynu.net:9071/github/function.php";
-        Axios.get(url).then(function(response){
-          alert(response)
-        }).catch(function(error){
-          alert(error)
-        });
+        alert();
+        var url = "http://ook.dynu.net:9071/github/fun.php";
+
 
     })
 
     $(".b02").click(function(){           
-        var http = new XMLHttpRequest();
-        var url = "http://ook.dynu.net:9071/github/function.php";
-        var params = "opt=1";
-        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-        http.onreadystatechange = function() {
-            if(http.readyState == 4 && http.status == 200) {
-                alert(http.responseText);
-            }
-        }
-        http.open("POST", url, true);
-        http.send(params);
+        alert();
     })
 
 
