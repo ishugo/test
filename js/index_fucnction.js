@@ -13,8 +13,26 @@ $(function(){
         //          //$(".alert_java").html(msg);
         //          //if(msg==''){location.reload();}else{alert(msg);}
         // });
-        alert();
-        var url = "http://ook.dynu.net:9071/github/fun.php";
+        //alert();
+
+        $.ajax({
+            //url:"http://hugo.qov.tw/github/function.php",
+            url:"http://ook.dynu.net:9070/github/fun.php",
+            type:"POST",
+            data:{
+                opt:1
+            },
+            dataType: "html",
+            beforeSend:function(){
+            },
+            success: function (response){
+                //alert(response)
+                $(".java_alert").html(response);
+            },
+        error:function(){
+            console.log("ERROR");
+        }
+    });
 
 
     })
