@@ -22,7 +22,7 @@ $(function(){
             data:{
                 opt:1
             },
-            dataType: "html",
+            //dataType: "html",
             beforeSend:function(){
             },
             success: function (response){
