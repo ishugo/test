@@ -4,6 +4,7 @@ $(function(){
     $(".b01").click(function(){ 
         //alert("b01");
         
+        //傳遞 POST 給 ook.dynu.net --------------------
         var f = document.createElement('form');
         f.action=m_url;
         f.method='POST';
@@ -16,6 +17,7 @@ $(function(){
         
         document.body.appendChild(f);
         f.submit();
+        // ------------------------------------------
         
 //         $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
 //             alert(msg);
