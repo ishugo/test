@@ -17,7 +17,7 @@ $(function(){
 
         $.ajax({
             //url:"http://hugo.qov.tw/github/function.php",
-            url:"https://ook.dynu.net:9070/github/fun.php",
+            url:"http://ook.dynu.net:9070/github/fun.php",
             type:"POST",
             data:{
                 opt:1
