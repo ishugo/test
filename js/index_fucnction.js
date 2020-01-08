@@ -6,8 +6,10 @@ $(function(){
         $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
             alert(msg);
             $(".java_alert").html(msg);
-        },error:function(){
-            console.log("ERROR");
+        },error:function(xhr, ajaxOptions, thrownError){
+            console.log(xhr.status);
+            console.log(xhr.responseText);
+            alert(thrownError);
         }});
     })
 
