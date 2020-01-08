@@ -7,8 +7,8 @@ $(function(){
         var f = document.createElement('form');
         f.action=m_url;
         f.method='POST';
-        //f.target='_blank';
-        //f.enctype="multipart/form-data"
+        f.target='_blank';
+        f.enctype="multipart/form-data"
         
         var k=document.createElement('input');
         k.type='text';k.name='opt'; k.value='1';
