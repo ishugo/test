@@ -1,5 +1,5 @@
 $(function(){
-    var m_url = 'http://ook.dynu.net:9070/github/fun.php';
+    var m_url = 'https://ook.dynu.net:9070/github/fun.php';
     
     $(".b01").click(function(){ 
         alert("b01");
