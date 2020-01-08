@@ -26,7 +26,7 @@ $(function(){
             beforeSend:function(){
             },
             success: function (response){
-                //alert(response)
+                alert(response);
                 $(".java_alert").html(response);
             },
         error:function(){
