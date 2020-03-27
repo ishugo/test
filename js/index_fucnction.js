@@ -11,9 +11,9 @@ $(function(){
         //"scrollX": true,
 	//"sDom": 'Rfrtlip',
 	//altEditor: true,
-        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-        "order": [[ 1, 'DESC' ]],
-        "language": {
+        lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        order: [[ 1, 'DESC' ]],
+        language: {
             "lengthMenu": "每頁 _MENU_ 筆",
             "zeroRecords": "抱歉，沒有找到！！！",
             "info": "總資料 _MAX_ 筆，_START_ 筆至 _END_ 筆，_PAGE_ 至 _PAGES_ 頁",
@@ -33,9 +33,9 @@ $(function(){
                 "sortDescending": ": 按降序對列進行排序"
             }
         },
-        "dom" : 'lBfrtip',
+        dom: 'lBfrtip',
         destroy: true,
-	searching: true,
+	searching: true
 
 // 	buttons: [
 // 		{text: '新增 - 通用必要軟體項',action: function ( e, dt, node, config ) {
@@ -43,7 +43,7 @@ $(function(){
 // 		}},	
 // 	]
 		
-     });
+    });
 
     $(".b01").click(function(){       
         
