@@ -24,7 +24,7 @@ $(function(){
     })
 
     $(".b02").click(function(){           
-        alert("b02");
+        alert("b02"); 
     })
 
 //	console.log(); //debug
