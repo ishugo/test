@@ -1,5 +1,3 @@
-
-
 $(function(){
     var m_url = 'https://ook.dynu.net:67/github/fun.php';
     
