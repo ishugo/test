@@ -1,8 +1,18 @@
-function dataTable_main(name){ //指定 dataTable name,html
-    $("#"+name).DataTable({ //各式表格列表
+
+
+$(function(){
+    var m_url = 'https://ook.dynu.net:67/github/fun.php';
+    
+    $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
+        $(".java_alert").html(msg);
+    },error:function(jqXHR, textStatus, errorThrown){
+
+    }});
+	
+    $("#example").DataTable({ //各式表格列表
         //"scrollX": true,
-		//"sDom": 'Rfrtlip',
-		altEditor: true,
+	//"sDom": 'Rfrtlip',
+	altEditor: true,
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
         "order": [[ 1, 'DESC' ]],
         "language": {
@@ -27,26 +37,15 @@ function dataTable_main(name){ //指定 dataTable name,html
         },
         "dom" : 'lBfrtip',
         destroy: true,
-		searching: true,
+	searching: true,
 
-// 		buttons: [
-// 			{text: '新增 - 通用必要軟體項',action: function ( e, dt, node, config ) {
-// 			    alert();
-// 			}},	
-// 		]
+// 	buttons: [
+// 		{text: '新增 - 通用必要軟體項',action: function ( e, dt, node, config ) {
+// 			alert();
+// 		}},	
+// 	]
 		
-		});
-}
-
-$(function(){
-    var m_url = 'https://ook.dynu.net:67/github/fun.php';
-    
-    $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
-        $(".java_alert").html(msg);
-	$("#example").DataTable();
-    },error:function(jqXHR, textStatus, errorThrown){
-
-    }});
+     });
 
     $(".b01").click(function(){       
         
