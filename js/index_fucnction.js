@@ -1,10 +1,10 @@
 $(function(){
 
-sydb();
+sydb('1');
 	
-function sydb(){
+function sydb(opt){
     var m_url = 'https://ook.dynu.net:67/github/fun.php';
-    $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
+    $.ajax({url:m_url,type:"POST",data:{opt:opt},dataType: "html",success: function (msg){
 	$(".java_alert").html(msg);
 	$("#example").DataTable({ //各式表格列表
 		//"scrollX": true,
@@ -50,11 +50,11 @@ function sydb(){
 
 
     $(".b01").click(function(){       
-	sydb(); 
+	sydb('1');
     })
 
     $(".b02").click(function(){            
-        alert("b02"); 
+        sydb('2');
     })
 
 //	console.log(); //debug
