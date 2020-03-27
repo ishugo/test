@@ -61,7 +61,7 @@ $(function(){
         
     })
 
-    $(".b02").click(function(){           
+    $(".b02").click(function(){            
         alert("b02"); 
     })
 
