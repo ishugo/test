@@ -10,7 +10,7 @@ $(function(){
     $("#example").DataTable({ //各式表格列表
         //"scrollX": true,
 	//"sDom": 'Rfrtlip',
-	altEditor: true,
+	//altEditor: true,
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
         "order": [[ 1, 'DESC' ]],
         "language": {
