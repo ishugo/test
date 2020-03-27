@@ -20,7 +20,7 @@ $(function(){
         // ------------------------------------------
         
         $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
-            alert(msg);
+            //alert(msg);
             $(".java_alert").html(msg);
         },error:function(jqXHR, textStatus, errorThrown){
             console.log("responseText:"+jqXHR.responseText);
