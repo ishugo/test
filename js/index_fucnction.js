@@ -3,10 +3,11 @@ $(function(){
     
     $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
         $(".java_alert").html(msg);
+	$("#example").DataTable();	
     },error:function(jqXHR, textStatus, errorThrown){
 
     }});
-    $("#example").DataTable();	
+    
 //     $("#example").DataTable({ //各式表格列表
 //         //"scrollX": true,
 // 	//"sDom": 'Rfrtlip',
