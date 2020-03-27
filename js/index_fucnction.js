@@ -43,6 +43,7 @@ $(function(){
     
     $.ajax({url:m_url,type:"POST",data:{opt:1},dataType: "html",success: function (msg){
         $(".java_alert").html(msg);
+	$("#example").DataTable();
     },error:function(jqXHR, textStatus, errorThrown){
 
     }});
