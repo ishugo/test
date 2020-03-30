@@ -95,6 +95,34 @@ function dataTable_main(name){ //指定 dataTable name,html
 	});
 }
 
+function dialog_add(){ //確定
+    var main = $(".main1").attr("r");
+    //alert(main);
+    var arr = new Array();
+
+    $(".w_db").each(function( i, el ) {
+        var atype = $(this).attr('type');
+        var athis = $(this);
+        
+        if (athis.is("input")) {
+            switch(atype) {
+    			case "radio": if($(this).prop("checked") == true){arr.push($(this).val());} break; 
+    			case "checkbox": if($(this).prop("checked") == true){arr.push($(this).val());} break; 
+    			case "text":arr.push($(this).val()); break;
+    			case "password":arr.push($(this).val()); break;
+		    }
+        } else if (athis.is("select")) {
+            arr.push(athis.val());
+        } else if (athis.is("textarea")) {
+            arr.push(athis.val());
+        }
+		
+    });  
+    
+    console.log(arr); //debug
+    
+}
+
 
 $(function(){
 
@@ -121,7 +149,7 @@ sydb('1');
 
 	$(document).on("click",".b03",function(){  
 		//alert("123");
-		var html_m = '<div class="row"><div class="col-md-6"><div class="main1" r=""></div></div>'+
+		var html_m = '<div class="row"><div class="col-md-6"><div class="main1" r="123456"></div></div>'+
 		'<div class="col-md-6"><div class="main2"></div></div></div>';
 		
 		dialog_main("dog",html_m,"測試123","center-200px","top+300px","auto","auto"); 
@@ -146,6 +174,11 @@ sydb('1');
 		$(".main2").append('<span class="d-flex flex-row-reverse">'+abutton_ui("but6","測試 console.log","javascript:;","")+'</span>'); 
 		
 	})
+
+	$(document).on("click","#but6",function(){
+		dialog_add();
+		//$(".dog").dialog("close");
+    	});
 
 //	console.log(); //debug
 //	alert(); //debug
