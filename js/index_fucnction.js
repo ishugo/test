@@ -124,7 +124,7 @@ $(function(){
 					text: '新增', action: function ( e, dt, node, conf ) {
 						var html_m = '<div class="row"><div class="main1" r="123456"></div></div></div>';
 						
-						dialog_main("dog",html_m,"測試123","center-200px","top+300px","auto","auto"); 
+						dialog_main("dog",html_m,"測試123","center-200px","top+300px","500","300"); 
 						
 						$(".main1").append(input_m("in01","try1","text","")); //輸入欄位 small name, title,type
 						$(".main1").append(input_m("in02","try2","text","")); //輸入欄位 small name, title,type
