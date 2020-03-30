@@ -2,6 +2,13 @@
 body{
     background-color: darkgray;
 }
+.dt-buttons{
+    float: left;
+    display: contents;
+}
+.dataTables_length{
+    margin-right: 10px;
+}
 .class01 {
     text-align: center;
     padding: 10px 0px 10px 0px;
