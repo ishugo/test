@@ -132,7 +132,42 @@ sydb('1');
 	    $.ajax({url:m_url,type:"POST",data:{opt:opt},dataType: "html",success: function (msg){
 		$(".java_alert").html(msg);
 		//var table = dataTable_main("example");
-		var table = $('#example').DataTable();
+		var table = $('#example').DataTable({ //各式表格列表 
+        	//"scrollX": true,
+		//"sDom": 'Rfrtlip',
+		//buttons: true,
+		altEditor: true,
+		"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+		"order": [[ 1, 'DESC' ]],
+		"language": {
+		    "lengthMenu": "每頁 _MENU_ 筆",
+		    "zeroRecords": "抱歉，沒有找到！！！",
+		    "info": "總資料 _MAX_ 筆，_START_ 筆至 _END_ 筆，_PAGE_ 至 _PAGES_ 頁",
+		    "infoEmpty": "沒有可用的記錄",
+		    "infoFiltered": "(搜尋 _TOTAL_ 筆，總資料 _MAX_ 筆)",
+		    "loadingRecords": "載入中...",
+		    "processing":     "處理中...",
+		    "search":"搜尋",
+		    "paginate": {
+			"first":      "第一頁",
+			"last":       "最後一頁",
+			"next":       "下一頁",
+			"previous":   "上一頁"
+		    },
+		    "aria": {
+			"sortAscending":  ": 按升序對列進行排序",
+			"sortDescending": ": 按降序對列進行排序"
+		    }
+		},
+		"dom" : 'lBfrtip',
+		destroy: true,
+		searching: true,
+		// 	buttons: [
+		// 		{text: '新增',action: function ( e, dt, node, config ) {
+		// 		    alert(); 
+		// 		}},	
+		// 	] 
+   		});
 		    		    
 		new $.fn.dataTable.Buttons( table, {
 		buttons: [
@@ -148,9 +183,9 @@ sydb('1');
 		]
 		});
 		    
-		    table.buttons( 0, null ).container().prependTo(
-			table.table().container()
-		    );
+		table.buttons( 0, null ).container().prependTo(
+		       table.table().container()
+		);
 	    },error:function(jqXHR, textStatus, errorThrown){
 
 	    }});
