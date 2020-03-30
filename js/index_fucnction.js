@@ -112,11 +112,11 @@ sydb('1');
 
 
 	$(".b01").click(function(){       
-	sydb('1');
+		sydb('1');
 	})
 
 	$(".b02").click(function(){            
-	sydb('2');
+		sydb('2');
 	})
 
 	$(document).on("click",".b03",function(){  
