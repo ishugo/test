@@ -88,7 +88,7 @@ function dataTable_main(name){ //指定 dataTable name,html
 	searching: true,
 	buttons: [
 		{text: '新增',action: function ( e, dt, node, config ) {
-		    alert();
+		    alert(); 
 		}},	
 	] 
     });
