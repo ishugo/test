@@ -57,7 +57,7 @@ function sydb(opt){
         sydb('2');
     })
 	
-    $(document).on("click",".b03",function(){ 
+    $(document).on("click",".b03",function(){  
 	alert("123");
     })
 
