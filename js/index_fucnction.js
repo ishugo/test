@@ -56,7 +56,7 @@ function dialog_main(name,msg,title,x,y,width,height){ //指定 dialog name,html
 }
 
 function dataTable_main(name){ //指定 dataTable name,html
-    $("#"+name).DataTable({ //各式表格列表
+    $("#"+name).DataTable({ //各式表格列表 
         //"scrollX": true,
 	//"sDom": 'Rfrtlip',
 // 	buttons: true,
