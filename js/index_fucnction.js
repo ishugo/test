@@ -133,22 +133,22 @@ sydb('1');
 		$(".java_alert").html(msg);
 		//var table = dataTable_main("example");
 		var table = $('#example').DataTable();
-		    new $.fn.dataTable.Buttons( table, {
-			buttons: [
-			    { 
-				text: 'Button 1',
-				action: function ( e, dt, node, conf ) {
-				    console.log( 'Button 1 clicked on' );
-				}
-			    },
-			    {
-				text: 'Button 2',
-				action: function ( e, dt, node, conf ) {
-				    console.log( 'Button 2 clicked on' );
-				}
-			    }
-			]
-		    } );
+		new $.fn.dataTable.Buttons( table, {
+		buttons: [
+			{ 
+			text: 'Button 1',
+			action: function ( e, dt, node, conf ) {
+		    		console.log( 'Button 1 clicked on' );
+			}
+		},
+		{
+			text: 'Button 2',
+			action: function ( e, dt, node, conf ) {
+			    console.log( 'Button 2 clicked on' );
+			}
+		}
+		]
+		});
 		    table.buttons( 0, null ).container().prependTo(
 			table.table().container()
 		    );
