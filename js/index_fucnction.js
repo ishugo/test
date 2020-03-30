@@ -118,13 +118,11 @@ $(function(){
 		}});
 		    		    
 		switch(opt) {  
-			case "1":
+			case "1": //新增、刪除
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
-						//alert("123");
-						//console.log( '新增 clicked on' );
-						$.ajax({url:m_url,type:"POST",data:{opt:"3"},dataType: "html",success: function (msg){
+						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:"aaa",try2:"bbb"},dataType: "html",success: function (msg){
 							alert(msg);
 						}});
 					}},{
