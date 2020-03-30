@@ -135,7 +135,7 @@ sydb('1');
 		var table = $('#example').DataTable();
 		    new $.fn.dataTable.Buttons( table, {
 			buttons: [
-			    {
+			    { 
 				text: 'Button 1',
 				action: function ( e, dt, node, conf ) {
 				    console.log( 'Button 1 clicked on' );
