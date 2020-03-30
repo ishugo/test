@@ -1,4 +1,4 @@
-function input_small(name, title,type,m_val){ //輸入欄位 small name, title,type,資料
+function input_small(name, title,type,m_val){ //輸入欄位 small name, title,type,資料 
     var input_m = '<div class="input-group input-group-sm mb-3">'+
     '<div class="input-group-prepend"><span class="input-group-text" id="inputGroup-sizing-sm">'+title+
     '</span></div><input type="'+type+'" name="'+name+'" value="'+m_val+'" class="w_db form-control my_input" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></div>';
