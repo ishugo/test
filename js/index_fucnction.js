@@ -122,7 +122,12 @@ $(function(){
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
-						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:"aaa",try2:"bbb"},dataType: "html",success: function (msg){
+						var html_m = '<div class="row"><div class="main1" r="123456"></div></div></div>';
+						$(".main1").append(input_m("in01","try1","text","")); //輸入欄位 small name, title,type
+						$(".main1").append(input_m("in02","try2","text","")); //輸入欄位 small name, title,type
+						var try1 = $("input[name^='in01']").val();
+						var try2 = $("input[name^='in02']").val();
+						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2},dataType: "html",success: function (msg){
 							alert(msg);
 						}});
 					}},{
