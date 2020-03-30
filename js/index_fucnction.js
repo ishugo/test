@@ -118,37 +118,7 @@ $(function(){
 		}});
 		    		    
 		switch(opt) {  
-			case "1": //新增、刪除
-				
-			Swal.mixin({
-			  input: 'text',
-			  //confirmButtonColor: '#000000',
-			  confirmButtonText: '下一步',
-			  cancelButtonText: '取消',
-			  showCancelButton: true,
-			  progressSteps: ['1', '2']
-			}).queue([
-			  {
-			    title: 'Question 1',
-			    text: 'Chaining swal2 modals is easy'
-			  },
-			  'Question 2'
-			]).then((result) => {
-			  if (result.value) {
-			    console.log(result.value);
-			    Swal.fire({
-			      title: '完成',
-			      html:
-				'Your answers: <pre><code>' +
-				  JSON.stringify(result.value) +
-				'</code></pre>',
-				confirmButtonText: '確認'
-			    }).then(function() {
-				alert();
-			    });
-
-			  }
-				
+			case "1": //新增、刪除			
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
