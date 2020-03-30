@@ -56,6 +56,10 @@ function sydb(opt){
     $(".b02").click(function(){            
         sydb('2');
     })
+	
+    $(document).on("click",".b03",function(){ 
+	alert("123");
+    })
 
 //	console.log(); //debug
 //	alert(); //debug
