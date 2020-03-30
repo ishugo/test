@@ -133,10 +133,7 @@ sydb('1');
 		$(".java_alert").html(msg);
 		//var table = dataTable_main("example");
 		var table = $('#example').DataTable({ //各式表格列表 
-        	//"scrollX": true,
-		//"sDom": 'Rfrtlip',
-		//buttons: true,
-		altEditor: true,
+		//altEditor: true,
 		"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
 		"order": [[ 1, 'DESC' ]],
 		"language": {
@@ -159,14 +156,9 @@ sydb('1');
 			"sortDescending": ": 按降序對列進行排序"
 		    }
 		},
-		"dom" : 'lBfrtip',
+		dom : 'lBfrtip',
 		destroy: true,
-		searching: true,
-		// 	buttons: [
-		// 		{text: '新增',action: function ( e, dt, node, config ) {
-		// 		    alert(); 
-		// 		}},	
-		// 	] 
+		searching: true
    		});
 		    		    
 		new $.fn.dataTable.Buttons( table, {
