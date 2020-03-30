@@ -149,6 +149,9 @@ sydb('1');
 			    }
 			]
 		    } );
+		    table.buttons( 0, null ).container().prependTo(
+			table.table().container()
+		    );
 	    },error:function(jqXHR, textStatus, errorThrown){
 
 	    }});
