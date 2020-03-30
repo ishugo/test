@@ -76,7 +76,12 @@ sydb('1');
 	})
 
 	$(document).on("click",".b03",function(){  
-	alert("123");
+		//alert("123");
+		var html_m = '<div class="row"><div class="col-md-6"><div class="main1" r=""></div></div>'+
+		'<div class="col-md-6"><div class="main2"></div></div></div>';
+		
+		dialog_main("dog",html_m,"測試123","center-200px","top+300px","auto","auto"); 
+		
 	})
 
 //	console.log(); //debug
