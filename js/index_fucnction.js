@@ -131,7 +131,8 @@ sydb('1');
 	    var m_url = 'https://ook.dynu.net:67/github/fun.php';
 	    $.ajax({url:m_url,type:"POST",data:{opt:opt},dataType: "html",success: function (msg){
 		$(".java_alert").html(msg);
-		var table = dataTable_main("example");
+		//var table = dataTable_main("example");
+		var table = $('#example').DataTable();
 		    new $.fn.dataTable.Buttons( table, {
 			buttons: [
 			    {
