@@ -134,8 +134,8 @@ sydb('1');
 		//var table = dataTable_main("example");
 		var table = $('#example').DataTable({ //各式表格列表 
 		//altEditor: true,
-		"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-		"order": [[ 1, 'DESC' ]],
+		//"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+		//"order": [[ 1, 'DESC' ]],
 		"language": {
 		    "lengthMenu": "每頁 _MENU_ 筆",
 		    "zeroRecords": "抱歉，沒有找到！！！",
@@ -156,9 +156,9 @@ sydb('1');
 			"sortDescending": ": 按降序對列進行排序"
 		    }
 		},
-		dom : 'lBfrtip',
-		destroy: true,
-		searching: true
+		//dom : 'lBfrtip',
+		//destroy: true,
+		//searching: true
    		});
 		    		    
 		new $.fn.dataTable.Buttons( table, {
