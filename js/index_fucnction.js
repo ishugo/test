@@ -136,15 +136,15 @@ sydb('1');
 		new $.fn.dataTable.Buttons( table, {
 		buttons: [
 			{ 
-			text: 'Button 1',
+			text: '新增',
 			action: function ( e, dt, node, conf ) {
-		    		console.log( 'Button 1 clicked on' );
+		    		console.log( '新增 clicked on' );
 			}
 		},
 		{
-			text: 'Button 2',
+			text: '刪除',
 			action: function ( e, dt, node, conf ) {
-			    console.log( 'Button 2 clicked on' );
+			    console.log( '刪除 clicked on' );
 			}
 		}
 		]
