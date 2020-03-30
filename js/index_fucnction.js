@@ -87,11 +87,11 @@ function dataTable_main(name){ //指定 dataTable name,html
         destroy: true,
 	searching: true,
 
-// 		buttons: [
-// 			{text: '新增 - 通用必要軟體項',action: function ( e, dt, node, config ) {
-// 			    alert();
-// 			}},	
-// 		]
+	buttons: [
+		{text: '新增 - 通用必要軟體項',action: function ( e, dt, node, config ) {
+		    alert();
+		}},	
+	]
 		
 	});
 }
