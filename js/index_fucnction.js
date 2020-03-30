@@ -133,9 +133,8 @@ sydb('1');
 		$(".java_alert").html(msg);
 		//var table = dataTable_main("example");
 		var table = $('#example').DataTable({ //各式表格列表 
-		//altEditor: true,
-		//"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-		//"order": [[ 1, 'DESC' ]],
+		"lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+		"order": [[ 1, 'DESC' ]],
 		"language": {
 		    "lengthMenu": "每頁 _MENU_ 筆",
 		    "zeroRecords": "抱歉，沒有找到！！！",
@@ -155,11 +154,7 @@ sydb('1');
 			"sortAscending":  ": 按升序對列進行排序",
 			"sortDescending": ": 按降序對列進行排序"
 		    }
-		},
-		//dom : 'lBfrtip',
-		//destroy: true,
-		//searching: true
-   		});
+		}});
 		    		    
 		new $.fn.dataTable.Buttons( table, {
 		buttons: [
@@ -174,10 +169,17 @@ sydb('1');
 			}}
 		]
 		});
+		switch(opt) {  
+			case "1":
+				table.buttons( 0, null ).container().prependTo(
+				       table.table().container()
+				);
+			break;
+			case "2":
+			break;
+		}
+
 		    
-		table.buttons( 0, null ).container().prependTo(
-		       table.table().container()
-		);
 	    },error:function(jqXHR, textStatus, errorThrown){
 
 	    }});
