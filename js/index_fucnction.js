@@ -59,7 +59,7 @@ function dataTable_main(name){ //指定 dataTable name,html
     $("#"+name).DataTable({ //各式表格列表
         //"scrollX": true,
 	//"sDom": 'Rfrtlip',
-	buttons: true,
+// 	buttons: true,
 	altEditor: true,
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
         "order": [[ 1, 'DESC' ]],
@@ -86,11 +86,11 @@ function dataTable_main(name){ //指定 dataTable name,html
         "dom" : 'lBfrtip',
         destroy: true,
 	searching: true,
-	buttons: [
-		{text: '新增',action: function ( e, dt, node, config ) {
-		    alert(); 
-		}},	
-	] 
+// 	buttons: [
+// 		{text: '新增',action: function ( e, dt, node, config ) {
+// 		    alert(); 
+// 		}},	
+// 	] 
     });
 }
 
@@ -131,14 +131,23 @@ sydb('1');
 	    var m_url = 'https://ook.dynu.net:67/github/fun.php';
 	    $.ajax({url:m_url,type:"POST",data:{opt:opt},dataType: "html",success: function (msg){
 		$(".java_alert").html(msg);
-		table = dataTable_main("example");
-		new $.fn.dataTable.Buttons( table, {
-		    "buttons": [
-			"copy",
-			"csv",
-			{ "type": "print", "buttonText": "Print me!" }
-		    ]
-		}); 
+		var table = dataTable_main("example");
+		    new $.fn.dataTable.Buttons( table, {
+			buttons: [
+			    {
+				text: 'Button 1',
+				action: function ( e, dt, node, conf ) {
+				    console.log( 'Button 1 clicked on' );
+				}
+			    },
+			    {
+				text: 'Button 2',
+				action: function ( e, dt, node, conf ) {
+				    console.log( 'Button 2 clicked on' );
+				}
+			    }
+			]
+		    } );
 	    },error:function(jqXHR, textStatus, errorThrown){
 
 	    }});
