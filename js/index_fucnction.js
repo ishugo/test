@@ -59,6 +59,7 @@ function dataTable_main(name){ //指定 dataTable name,html
     $("#"+name).DataTable({ //各式表格列表
         //"scrollX": true,
 	//"sDom": 'Rfrtlip',
+	buttons: true,
 	altEditor: true,
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
         "order": [[ 1, 'DESC' ]],
