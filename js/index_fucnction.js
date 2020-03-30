@@ -149,7 +149,7 @@ sydb('1');
 			    }
 			]
 		    } );
-		    table.buttons( 1, null ).container().prependTo(
+		    table.buttons( 0, null ).container().prependTo(
 			table.table().container()
 		    );
 	    },error:function(jqXHR, textStatus, errorThrown){
