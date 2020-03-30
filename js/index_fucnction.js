@@ -132,7 +132,14 @@ sydb('1');
 	    var m_url = 'https://ook.dynu.net:67/github/fun.php';
 	    $.ajax({url:m_url,type:"POST",data:{opt:opt},dataType: "html",success: function (msg){
 		$(".java_alert").html(msg);
-		dataTable_main("example");
+		table = dataTable_main("example");
+		new $.fn.dataTable.Buttons( table, {
+		    "buttons": [
+			"copy",
+			"csv",
+			{ "type": "print", "buttonText": "Print me!" }
+		    ]
+		});
 	    },error:function(jqXHR, textStatus, errorThrown){
 
 	    }});
