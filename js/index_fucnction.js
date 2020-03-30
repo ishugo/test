@@ -122,11 +122,14 @@ $(function(){
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
-						alert("123");
-						console.log( '新增 clicked on' );
+						//alert("123");
+						//console.log( '新增 clicked on' );
+						$.ajax({url:m_url,type:"POST",data:{opt:"3"},dataType: "html",success: function (msg){
+							alert(msg);
+						}});
 					}},{
 					text: '刪除', action: function ( e, dt, node, conf ) {
-						alert("aaa")
+						//alert("aaa")
 						console.log( '刪除 clicked on' );
 					}}]
 				});
