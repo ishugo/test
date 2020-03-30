@@ -139,7 +139,7 @@ sydb('1');
 			"csv",
 			{ "type": "print", "buttonText": "Print me!" }
 		    ]
-		});
+		}); 
 	    },error:function(jqXHR, textStatus, errorThrown){
 
 	    }});
