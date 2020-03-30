@@ -131,24 +131,23 @@ sydb('1');
 	    var m_url = 'https://ook.dynu.net:67/github/fun.php';
 	    $.ajax({url:m_url,type:"POST",data:{opt:opt},dataType: "html",success: function (msg){
 		$(".java_alert").html(msg);
-		//var table = dataTable_main("example");
-		var table = $('#example').DataTable();
+		var table = dataTable_main("example");
+		//var table = $('#example').DataTable();
+		    		    
 		new $.fn.dataTable.Buttons( table, {
 		buttons: [
 			{ 
 			text: '新增',
 			action: function ( e, dt, node, conf ) {
 		    		console.log( '新增 clicked on' );
-			}
-		},
-		{
+			}},{
 			text: '刪除',
 			action: function ( e, dt, node, conf ) {
 			    console.log( '刪除 clicked on' );
-			}
-		}
+			}}
 		]
 		});
+		    
 		    table.buttons( 0, null ).container().prependTo(
 			table.table().container()
 		    );
