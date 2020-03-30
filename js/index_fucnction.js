@@ -123,13 +123,18 @@ $(function(){
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
 						var html_m = '<div class="row"><div class="main1" r="123456"></div></div></div>';
+						
+						dialog_main("dog",html_m,"測試123","center-200px","top+300px","auto","auto"); 
+						
 						$(".main1").append(input_m("in01","try1","text","")); //輸入欄位 small name, title,type
 						$(".main1").append(input_m("in02","try2","text","")); //輸入欄位 small name, title,type
-						var try1 = $("input[name^='in01']").val();
-						var try2 = $("input[name^='in02']").val();
-						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2},dataType: "html",success: function (msg){
-							alert(msg);
-						}});
+						var aa = $("input[name^='in01']").val();
+						var bb = $("input[name^='in02']").val();
+						alert(aa+","+bb);
+						
+// 						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2},dataType: "html",success: function (msg){
+// 							alert(msg);
+// 						}});
 					}},{
 					text: '刪除', action: function ( e, dt, node, conf ) {
 						//alert("aaa")
