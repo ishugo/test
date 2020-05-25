@@ -144,8 +144,9 @@ $(function(){
 						}).get().join(',');
 						
 						$.ajax(m_url,{type:'POST',data:{opt:"4",del_q:del_q}}).done(function(msg){
-							//location.reload();
-							console.log( msg );
+							alert("刪除成功！");
+							location.reload();
+							//console.log( msg );
 						});
 						
 					}}]
