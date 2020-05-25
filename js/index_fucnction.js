@@ -178,7 +178,7 @@ $(function(){
 			//console.log(msg); //debug
 			//alert("新增成功！");
 			sydb('1');
-			dialog_main.dialog("close");
+			$(".ui-widget-content").dialog("close");
 			//location.reload();
 		});
 		
