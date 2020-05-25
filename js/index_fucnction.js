@@ -146,7 +146,7 @@ $(function(){
 						}).get().join(',');
 						
 						$.ajax(m_url,{type:'POST',data:{opt:"4",del_q:del_q}}).done(function(msg){
-							alert("刪除成功！");
+							//alert("刪除成功！");
 							location.reload();
 							//console.log( msg );
 						});
@@ -175,7 +175,7 @@ $(function(){
 		
 		$.post( m_url,{opt:3,try1:try1,try2:try2}, function( msg ) {
 			//console.log(msg); //debug
-			alert("新增成功！");
+			//alert("新增成功！");
 			location.reload();
 		});
 		
