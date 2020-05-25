@@ -134,7 +134,7 @@ $(function(){
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
-						dialog_main("dog1",'<div class="main1"></div>',"測試","center-20px","top+400px","auto","auto");
+						dialog_main("dog1",'<div class="main1"></div>',"新增","center-20px","top+400px","auto","auto");
 						
 						$(".main1").append(input_m("in01","try1","text","")); 
 						$(".main1").append(input_m("in02","try2","text","")); 
@@ -182,11 +182,11 @@ $(function(){
 		
 	});
 
-	$(".b01").click(function(){        
+	$(".b01").click(function(){ //查尋測試       
 		sydb('1');
 	})
 
-	$(".b02").click(function(){            
+	$(".b02").click(function(){ //查尋複製網站           
 		sydb('2');
 	})
 
