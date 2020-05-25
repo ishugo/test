@@ -178,8 +178,7 @@ $(function(){
 			//console.log(msg); //debug
 			//alert("新增成功！");
 			sydb('1');
-			$(".main1").dialog( "close" );
-			$(".dog1").dialog( "close" );
+			$( this ).dialog( "close" ); 
 			//location.reload();
 		});
 		
