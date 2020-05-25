@@ -83,6 +83,18 @@ function dialog_add(){ //確定
     
 }
 
+function del_all(){ //全選 // 不全選
+	if($(".clickAll").prop("checked")) {
+		$("input[name^='active_col']").each(function() {
+			$(this).prop("checked", true);
+		});
+	  } else {
+		$("input[name^='active_col']").each(function() {
+			$(this).prop("checked", false);
+		});           
+	}
+}
+
 
 $(function(){
 
