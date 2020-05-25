@@ -134,7 +134,7 @@ $(function(){
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
-						dialog_main("dog1",'<div class="main1"></div>',"測試","center","top+500px","auto","auto");
+						dialog_main("dog1",'<div class="main1"></div>',"測試","center-100px","top+300px","auto","auto");
 						
 						$(".main1").append(input_m("in01","try1","text","")); 
 						$(".main1").append(input_m("in02","try2","text","")); 
