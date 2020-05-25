@@ -177,9 +177,9 @@ $(function(){
 		$.post( m_url,{opt:3,try1:try1,try2:try2}, function( msg ) {
 			alert("新增成功！");
 			location.reload();
-		}});
+		});
 		
-	})
+	});
 
 	$(".b01").click(function(){        
 		sydb('1');
