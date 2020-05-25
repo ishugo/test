@@ -170,15 +170,14 @@ $(function(){
 	}
 	
 	$(document).on("click",".button_m",function(){ //新增
-		alert("12312312312");
 		var m_url = 'https://ook.dynu.net:67/github/fun.php';
 		var try1 = $("input[name='in01']").val();
 		var try2 = $("input[name='in02']").val();
 		
 		$.post( m_url,{opt:3,try1:try1,try2:try2}, function( msg ) {
-			console.log(msg); //debug
-// 			alert("新增成功！");
-// 			location.reload();
+			//console.log(msg); //debug
+			alert("新增成功！");
+			location.reload();
 		});
 		
 	});
