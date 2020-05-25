@@ -134,7 +134,12 @@ $(function(){
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
-						dialog_main("dog1",'<div class="main1"></div>',"測試","center","center","800","400");
+						dialog_main("dog1",'<div class="main1"></div>',"測試","center-200px","top+300px","auto","auto");
+						
+						$(".main1").append(input_m("in01","try1","text","")); 
+						$(".main1").append(input_m("in02","try2","text","")); 
+						$(".main1").append('<span class="d-flex flex-row-reverse">'+abutton_ui("send_a","送出","javascript:;","")+'</span>'); 
+						
 //						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:"qaz",try2:"wsx"}.done(function(msg){
 // 							alert("新增成功！");
 // 							location.reload();
@@ -167,7 +172,10 @@ $(function(){
 
 	    }});
 	}
-
+	
+	$(".send_a").click(function(){   
+		alert();
+	})
 
 	$(".b01").click(function(){        
 		sydb('1');
