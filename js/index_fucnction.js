@@ -178,7 +178,7 @@ $(function(){
 			//console.log(msg); //debug
 			//alert("新增成功！");
 			sydb('1');
-			$(".dog1").dialog( "close" );
+			$(".ui-dialog").dialog( "close" );
 			//location.reload();
 		});
 		
