@@ -169,7 +169,8 @@ $(function(){
 	    }});
 	}
 	
-	$("#send_a").click(function(){   //新增
+	$(document).on("click","#send_a",function(){ //新增
+
 		var m_url = 'https://ook.dynu.net:67/github/fun.php';
 		var try1 = $("input[name='in01']").val();
 		var try2 = $("input[name='in02']").val();
