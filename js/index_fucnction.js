@@ -80,7 +80,7 @@ function dialog_add(){ //確定
     });  
     
     console.log(arr); //debug
-    $(".dog").dialog("close");
+    
 }
 
 function del_all(){ //全選 // 不全選
@@ -221,7 +221,8 @@ $(function(){
 	})
 
 	$(document).on("click","#but6",function(){
-		dialog_add();
+		//dialog_add();
+		$(".dog").dialog("close");
     	});
 
 //	console.log(); //debug
