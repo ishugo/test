@@ -169,9 +169,9 @@ $(function(){
 	    }});
 	}
 	
-	$("#send_a").click(function(){   
-		var try1 = $("input[class='in01']").val();
-		var try2 = $("input[class='in02']").val();
+	$("#send_a").click(function(){   //新增
+		var try1 = $("input[name='in01']").val();
+		var try2 = $("input[name='in02']").val();
 		$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2}.done(function(msg){
 			alert("新增成功！");
 			location.reload();
