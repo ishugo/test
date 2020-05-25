@@ -140,10 +140,6 @@ $(function(){
 						$(".main1").append(input_m("in02","try2","text","")); 
 						$(".main1").append('<span class="d-flex flex-row-reverse">'+abutton_ui("send_a","送出","javascript:;","")+'</span>'); 
 						
-//						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:"qaz",try2:"wsx"}.done(function(msg){
-// 							alert("新增成功！");
-// 							location.reload();
-//						}});
 					}},{
 					text: '刪除', action: function ( e, dt, node, conf ) {
 						var del_q = $("input[name^='active_col']:checkbox:checked").map(function() {
@@ -173,8 +169,13 @@ $(function(){
 	    }});
 	}
 	
-	$(".send_a").click(function(){   
-		alert();
+	$("#send_a").click(function(){   
+		var try1 = $("input[class='in01']").val();
+		var try2 = $("input[class='in02']").val();
+		$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2}.done(function(msg){
+			alert("新增成功！");
+			location.reload();
+		}});
 	})
 
 	$(".b01").click(function(){        
