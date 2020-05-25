@@ -139,7 +139,15 @@ $(function(){
 						}});
 					}},{
 					text: '刪除', action: function ( e, dt, node, conf ) {
-						console.log( '刪除 clicked on' );
+						var del_q = $("input[name^='active_col']:checkbox:checked").map(function() {
+						return $(this).attr("name").replace("active_col[","").replace("]","");
+						}).get().join(',');
+						
+						$.ajax(m_url,{type:'POST',data:{opt:"4",del_q:del_q}}).done(function(msg){
+							//location.reload();
+							console.log( msg );
+						});
+						
 					}}]
 				});
 				
