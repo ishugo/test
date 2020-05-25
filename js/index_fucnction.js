@@ -134,9 +134,11 @@ $(function(){
 				new $.fn.dataTable.Buttons( table, {
 				buttons: [{ 
 					text: '新增', action: function ( e, dt, node, conf ) {
-						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:"qaz",try2:"wsx"},dataType: "html",success: function (msg){
-							alert("新增成功！");
-						}});
+						dialog_main("dog1",'<div class="main1"></div>',"測試","center","center","800","400");
+//						$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:"qaz",try2:"wsx"}.done(function(msg){
+// 							alert("新增成功！");
+// 							location.reload();
+//						}});
 					}},{
 					text: '刪除', action: function ( e, dt, node, conf ) {
 						var del_q = $("input[name^='active_col']:checkbox:checked").map(function() {
