@@ -175,8 +175,9 @@ $(function(){
 		var try2 = $("input[name='in02']").val();
 		
 		$.post( m_url,{opt:3,try1:try1,try2:try2}, function( msg ) {
-			alert("新增成功！");
-			location.reload();
+			console.log(msg); //debug
+// 			alert("新增成功！");
+// 			location.reload();
 		});
 		
 	});
