@@ -170,12 +170,18 @@ $(function(){
 	}
 	
 	$("#send_a").click(function(){   //新增
+		var m_url = 'https://ook.dynu.net:67/github/fun.php';
 		var try1 = $("input[name='in01']").val();
 		var try2 = $("input[name='in02']").val();
-		$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2}.done(function(msg){
+		
+		$.post( m_url,{opt:3,try1:try1,try2:try2}, function( msg ) {
 			alert("新增成功！");
 			location.reload();
 		}});
+		
+// 		$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2}.done(function(msg){
+
+// 		}});
 	})
 
 	$(".b01").click(function(){        
