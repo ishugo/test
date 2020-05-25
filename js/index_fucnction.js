@@ -179,9 +179,6 @@ $(function(){
 			location.reload();
 		}});
 		
-// 		$.ajax({url:m_url,type:"POST",data:{opt:"3",try1:try1,try2:try2}.done(function(msg){
-
-// 		}});
 	})
 
 	$(".b01").click(function(){        
