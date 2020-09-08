@@ -156,7 +156,7 @@ $(function(){
 				});
 				
 				table.buttons( 0, null ).container().prependTo(
-				       table.table().container()
+				    table.table().container()
 				);
 			break;
 			case "2":
