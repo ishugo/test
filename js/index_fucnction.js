@@ -226,7 +226,17 @@ $(function(){
     	});
 	
 	$(document).on("click",".send_c",function(){ //編輯
-		alert("123");
+		//alert("123");
+		var m_url = 'https://ook.dynu.net:67/github/fun.php';
+		var tid = $(this).attr("t");
+		$.post( m_url,{opt:5,tid:tid}, function( msg ) {
+			console.log(msg); //debug
+			//alert("新增成功！");
+			//sydb('1');
+			//$(".dog1").dialog("close");
+			//location.reload();
+		});
+		
 	});
 
 //	console.log(); //debug
