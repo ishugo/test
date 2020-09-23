@@ -33,6 +33,6 @@ body{
 .b02{
     margin:10px 0px 10px 0px;
 } 
-checkbox{
-    margin-right: 10px;
+input[type=checkbox]{
+    margin-right: 10px !important; 
 }
