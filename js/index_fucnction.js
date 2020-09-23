@@ -224,6 +224,10 @@ $(function(){
 		//dialog_add();
 		$(".dog").dialog("close");
     	});
+	
+	$(document).on("click",".send_c",function(){ //編輯
+		alert("123");
+	}):
 
 //	console.log(); //debug
 //	alert(); //debug
