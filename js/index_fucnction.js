@@ -232,16 +232,12 @@ $(function(){
 		$.post( m_url,{opt:5,tid:tid}, function( msg ) {
 			//console.log(msg); //debug
 			var res = JSON.parse(msg); //解析JSON
-			console.log(res); //debug
+			//console.log(res); //debug
 			dialog_main("dog1",'<div class="main1"></div>',"新增","","","210","210");
-			$(".main1").append(input_m("in01","try1","text","")); 
-			$(".main1").append(input_m("in02","try2","text","")); 
+			$(".main1").append(input_m("in01","try1","text",res[0]["try1"])); 
+			$(".main1").append(input_m("in02","try2","text",res[0]["try2"])); 
 			$(".main1").append('<br><span class="d-flex flex-row-reverse">'+abutton_ui("send_e","送出","javascript:;","")+'</span>'); 
 			$("#send_e").css("display","block");
-			//alert("新增成功！");
-			//sydb('1');
-			//$(".dog1").dialog("close");
-			//location.reload();
 		});
 		
 	});
