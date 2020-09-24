@@ -238,7 +238,7 @@ $(function(){
 			var res = JSON.parse(msg); //解析JSON
 			//console.log(res); //debug
 			dialog_main("dog1",'<div class="main1"></div>',"編輯","","","210","210");
-			$(".main1").append(input_m("in00","try0","hidden",res[0]["try0"]));
+			$(".main1").append(input_m("in00","try0","hidden",res[0]["id"]));
 			$(".main1").append(input_m("in01","try1","text",res[0]["try1"])); 
 			$(".main1").append(input_m("in02","try2","text",res[0]["try2"])); 
 			$(".main1").append('<br><span class="d-flex flex-row-reverse">'+abutton_ui("send_e","送出","javascript:;","")+'</span>'); 
