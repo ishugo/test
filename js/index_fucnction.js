@@ -248,7 +248,7 @@ $(function(){
 		var try0 = $("input[name='in00']").val();
 		var try1 = $("input[name='in01']").val();
 		var try2 = $("input[name='in02']").val();
-		$.post( m_url,{opt:6,tid:tid}, function( msg ) {
+		$.post( m_url,{opt:6,try0:try0,try1:try1,try2:try2}, function( msg ) {
 			sydb('1');
 			$(".dog1").dialog("close");
 		});
