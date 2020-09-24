@@ -244,7 +244,6 @@ $(function(){
 	});
 	
 	$(document).on("click","#send_e",function(){ //編輯 - 送出
-		alert("123");
 		var m_url = 'https://ook.dynu.net:67/github/fun.php';
 		var try0 = $("input[name='in00']").val();
 		var try1 = $("input[name='in01']").val();
