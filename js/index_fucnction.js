@@ -6,7 +6,11 @@ function input_small(name, title,type,m_val){ //輸入欄位 small name, title,t
 }
 
 function input_m(name, title,type,m_val){ //輸入欄位 small name, title,type
-    var input_m = '<div class="input-group mb-3"><div class="input-group-prepend"><span class="input-group-text" id="inputGroup-sizing-default">'+title+'</span></div><input type="'+type+'" name="'+name+'" value="'+m_val+'" class="w_db form-control my_input" aria-label="Default" aria-describedby="inputGroup-sizing-default"></div>';
+    if(type=="hidden"){
+	var input_m = '<input type="'+type+'" name="'+name+'" value="'+m_val+'" class="w_db form-control my_input">';
+    }else{
+	var input_m = '<div class="input-group mb-3"><div class="input-group-prepend"><span class="input-group-text" id="inputGroup-sizing-default">'+title+'</span></div><input type="'+type+'" name="'+name+'" value="'+m_val+'" class="w_db form-control my_input" aria-label="Default" aria-describedby="inputGroup-sizing-default"></div>';
+    }
     return input_m;
 }
 
@@ -234,7 +238,7 @@ $(function(){
 			var res = JSON.parse(msg); //解析JSON
 			//console.log(res); //debug
 			dialog_main("dog1",'<div class="main1"></div>',"編輯","","","210","210");
-			$(".main1").append('<input type="hidden" name="in00" id="try0" value="'+res[0]["id"]+'">');
+			$(".main1").append(input_m("in00","try0","hidden",res[0]["try0"]));
 			$(".main1").append(input_m("in01","try1","text",res[0]["try1"])); 
 			$(".main1").append(input_m("in02","try2","text",res[0]["try2"])); 
 			$(".main1").append('<br><span class="d-flex flex-row-reverse">'+abutton_ui("send_e","送出","javascript:;","")+'</span>'); 
