@@ -234,6 +234,7 @@ $(function(){
 			var res = JSON.parse(msg); //解析JSON
 			//console.log(res); //debug
 			dialog_main("dog1",'<div class="main1"></div>',"編輯","","","210","210");
+			$(".main1").append(input_m("in00","try0","hidden",res[0]["id"])); 
 			$(".main1").append(input_m("in01","try1","text",res[0]["try1"])); 
 			$(".main1").append(input_m("in02","try2","text",res[0]["try2"])); 
 			$(".main1").append('<br><span class="d-flex flex-row-reverse">'+abutton_ui("send_e","送出","javascript:;","")+'</span>'); 
@@ -241,6 +242,21 @@ $(function(){
 		});
 		
 	});
+	
+	$(document).on("click","#send_e",function(){ //編輯 - 送出
+		alert("123");
+		var m_url = 'https://ook.dynu.net:67/github/fun.php';
+		var try0 = $("input[name='in00']").val();
+		var try1 = $("input[name='in01']").val();
+		var try2 = $("input[name='in02']").val();
+		$.post( m_url,{opt:6,tid:tid}, function( msg ) {
+			sydb('1');
+			$(".dog1").dialog("close");
+		});
+		
+	});
+		
+	
 
 //	console.log(); //debug
 //	alert(); //debug
