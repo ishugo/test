@@ -1,6 +1,6 @@
 @charset "utf-8";
 body{  
-    color: #fff;
+    
     background-color: rgb(63, 68, 65);
 }
 .dt-buttons{
@@ -11,10 +11,12 @@ body{
     margin-right: 10px;
 } 
 .class01 {
+    color: #fff; 
     text-align: center;
     padding: 10px 0px 10px 0px;
 }
 .class02{
+    color: #fff; 
     display:flex;
     align-items:center;
     justify-content:center; 
@@ -29,9 +31,11 @@ body{
 }
 
 .b01{
+    color: #fff; 
     margin:10px 0px 10px 0px;
 }
 .b02{
+    color: #fff; 
     margin:10px 0px 10px 0px;
 } 
 input[type=checkbox]{
