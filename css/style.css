@@ -44,3 +44,6 @@ input[type=checkbox]{
     1px 1px 0 #000,
     2px 2px 2px black;
 }
+.dataTables_wrapper{
+    margin-bottom: 20px;
+}
