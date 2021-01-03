@@ -1,6 +1,7 @@
 @charset "utf-8";
 body{  
     /* background-color: rgb(214, 255, 148); */
+    background-color: darkgray;
 }
 .dt-buttons{
     float: left;
@@ -37,12 +38,12 @@ input[type=checkbox]{
     margin-right: 10px !important; 
 }
 .container{
-    box-shadow:
+/*     box-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000,
-    2px 2px 2px black;
+    2px 2px 2px black; */
 }
 .dataTables_wrapper{
     margin-bottom: 20px;
