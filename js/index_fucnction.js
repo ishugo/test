@@ -119,14 +119,14 @@ function sydb(opt){
 			"processing":     "處理中...",
 			"search":"搜尋",
 			"paginate": {
-			"first":      "第一頁",
-			"last":       "最後一頁",
-			"next":       "下一頁",
-			"previous":   "上一頁"
+                "first":      "第一頁",
+                "last":       "最後一頁",
+                "next":       "下一頁",
+                "previous":   "上一頁"
 			},
 			"aria": {
-			"sortAscending":  ": 按升序對列進行排序",
-			"sortDescending": ": 按降序對列進行排序"
+                "sortAscending":  ": 按升序對列進行排序",
+                "sortDescending": ": 按降序對列進行排序"
 			}
 		}});
 						
