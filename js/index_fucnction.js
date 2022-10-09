@@ -100,7 +100,7 @@ function del_all(){ //全選 // 不全選
 }
 
 function sydb(opt){
-	var m_url = 'https://ook.dynu.net:67/github/fun.php';
+	var m_url = 'https://is.mypi.co:67/github/fun.php';
 	
 	$.ajax({url:m_url,type:"POST",data:{opt:opt},dataType: "html",success: function (msg){	
 
