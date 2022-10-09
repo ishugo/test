@@ -175,7 +175,7 @@ $(function(){
 	sydb('1');
 
 	$(document).on("click","#send_a",function(){ //新增
-		var m_url = 'https://ook.dynu.net:67/github/fun.php';
+		var m_url = 'https://is.mypi.co:67/github/fun.php';
 		var try1 = $("input[name='in01']").val();
 		var try2 = $("input[name='in02']").val();
 		
@@ -232,7 +232,7 @@ $(function(){
 	
 	$(document).on("click",".send_c",function(){ //編輯
 		//alert("123");
-		var m_url = 'https://ook.dynu.net:67/github/fun.php';
+		var m_url = 'https://is.mypi.co:67/github/fun.php';
 		var tid = $(this).attr("t");
 		$.post( m_url,{opt:5,tid:tid}, function( msg ) {
 			//console.log(msg); //debug
@@ -249,7 +249,7 @@ $(function(){
 	});
 	
 	$(document).on("click","#send_e",function(){ //編輯 - 送出
-		var m_url = 'https://ook.dynu.net:67/github/fun.php';
+		var m_url = 'https://is.mypi.co:67/github/fun.php';
 		var try0 = $("input[name='in00']").val();
 		var try1 = $("input[name='in01']").val();
 		var try2 = $("input[name='in02']").val();
